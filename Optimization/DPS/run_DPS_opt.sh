@@ -5,12 +5,10 @@
 #SBATCH -N 3            																# Total number of nodes to request (up to 120)
 #SBATCH --ntasks-per-node 20           													# Number of processors per node (up to 20)
 #SBATCH -p sla-prio           															# Queue name "parallel"
-#SBATCH -A azh       																# allocation name
+#SBATCH --account=azh5924_b  																# allocation name
 #SBATCH -t 1:00:00       											 					# Run time (hh:mm:ss) - up to 36 hours
 #SBATCH --mail-user=aas6791@psu.edu             										# address for email notification
 #SBATCH --mail-type=ALL                  												# email at Begin and End of job
-
-cd $SLURM_SUBMIT_DIR
 
 module load openmpi boost/1.77.0
 
