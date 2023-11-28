@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -D /scratch/Lake_Problem_DPS/Optimization/DPS/
-#SBATCH -o /scratch/Lake_Problem_DPS/Optimization/DPS/output/job.%j.out   # Name of the output file (eg. myMPI.oJobID)
-#SBATCH -e /scratch/Lake_Problem_DPS/Optimization/DPS/output/error.%j.out
+#SBATCH -D /storage/home/aas6791/work/LakeProblem/Lake_Problem_DPS/Optimization/DPS
+#SBATCH -o /storage/home/aas6791/work/LakeProblem/Lake_Problem_DPS/Optimization/DPS/output/job.%j.out   # Name of the output file (eg. myMPI.oJobID)
+#SBATCH -e /storage/home/aas6791/work/LakeProblem/Lake_Problem_DPS/Optimization/DPS/output/error.%j.out
 #SBATCH -N3            																# Total number of nodes to request (up to 120)
 #SBATCH --ntasks-per-node 20           													# Number of processors per node (up to 20)
 #SBATCH --partition=sla-prio           															# Queue name "parallel"
