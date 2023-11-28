@@ -1,7 +1,7 @@
 # Makefile for traditional lake problem
 CXX = mpiCC
 CXXFLAGS = -c -Wall
-INC = -I /opt/boost/1.54.0/include
+INC = -I /swst/apps/boost/1.77.0_gcc-8.5.0/
 LIBS = -lm
 UNAME_S = $(shell uname -s)
 
