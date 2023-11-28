@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -D /scratch/Lake_Problem_DPS/Optimization/DPS/
+#SBATCH -D /scratch/Lake_Problem_DPS/Optimization/DPS
 #SBATCH -o /scratch/Lake_Problem_DPS/Optimization/DPS/output/job.%j.out   # Name of the output file (eg. myMPI.oJobID)
 #SBATCH -e /scratch/Lake_Problem_DPS/Optimization/DPS/output/error.%j.out
 #SBATCH -N3            																# Total number of nodes to request (up to 120)
