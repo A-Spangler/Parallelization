@@ -6,7 +6,7 @@ HOSTFILE=.hostlist-job$SLURM_JOB_ID
 srun hostname -f > $HOSTS
 sort $HOSTS | uniq -c | awk '{print $2 ":" $1}' >> $HOSTFILE
 
-echo "--------- The BEGINNING ---------" >> ./mpi.out
-srun -N1 -n4 -hostfile $HOSTFILE ./hello_world_mpi >> ./mpi.out
+echo "--------- The BEGINNING ---------" >> ./runmpi.out
+srun -N1 -n4 -hostfile $HOSTFILE ./hello_world_mpi.exe >> ./runmpi.out
 
 rm $HOSTS $HOSTFILE
