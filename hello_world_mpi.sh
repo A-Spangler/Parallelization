@@ -12,7 +12,7 @@
 module load intel
 module load openmpi
 
-orterun ./hello_world_mpi
+orterun ./hello_world_mpi.exe
 
 
 
