@@ -9,5 +9,7 @@
 #SBATCH --time 0:01:00
 #SBATCH --mail-user=aas6791@psu.edu
 
+module load parallel 
+
 #job commands go below this line
 srun -N1 -n1 test3script.sh
