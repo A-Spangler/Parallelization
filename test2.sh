@@ -12,9 +12,10 @@
 module load parallel
 
 #job commands go below this line
-parallel echo ::: "Leaf"
-  hostname &
-parallel echo ::: "Kitty"
-  hostname &
-parallel echo ::: "Veggie Broth"
+parallel echo ::: A B C :::
   hostname
+  hostname
+  hostname &
+Parallel echo ::: A B C ::: 7 8 9 &
+Parallel echo ::: 77 66 55 ::: X Y Z
+  
