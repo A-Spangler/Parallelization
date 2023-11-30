@@ -9,8 +9,5 @@
 #SBATCH --time 0:01:00
 #SBATCH --mail-user=aas6791@psu.edu
 
-srun parallel echo ::: A B C ::: 'Kitty' 2 3 &
-srun parallel echo ::: 77 'Tea' ::: 
-  hostname &
-srun parallel echo :::
+echo "kitties are soft" 
   hostname
