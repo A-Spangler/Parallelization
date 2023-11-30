@@ -10,4 +10,5 @@
 #SBATCH --mail-user=aas6791@psu.edu
 
 #job commands go below this line
-parallel echo ::: "I am running on " hostname
+parallel echo ::: hostname hostname hostname ::: A B C 
+  hostname
