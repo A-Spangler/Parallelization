@@ -12,6 +12,6 @@
 module load parallel
 
 #job commands go below this line
-Parallel echo ::: A B C ::: 7 8 9 &
-Parallel echo ::: 77 66 55 ::: X Y Z
+parallel echo ::: A B C ::: 7 8 9 &
+parallel echo ::: 77 66 55 ::: X Y Z
   
