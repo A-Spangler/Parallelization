@@ -10,4 +10,4 @@
 #SBATCH --mail-user=aas6791@psu.edu
 
 #job commands go below this line
-srun -N1 -n1 test3script
+srun -N1 -n1 test3script.sh
