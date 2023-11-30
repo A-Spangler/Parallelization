@@ -1,0 +1,7 @@
+parallel echo ::: "Leaf"
+  hostname &
+parallel echo ::: "Kitty"
+  hostname &
+parallel echo ::: "Veggie Broth"
+  hostname &
+parallel echo :::  A V A ::: A V A ::: A V A
