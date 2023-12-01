@@ -1,2 +1,2 @@
-echo "kitties are soft" 
+srun echo "kitties are soft" 
   hostname
