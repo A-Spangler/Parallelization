@@ -12,4 +12,4 @@
 module load parallel 
 
 #job commands go below this line
-srun --ntasks=1 --exclusive ./test3script.exe
+srun --ntasks=1 --exclusive echo "I wish I had a cat" 
