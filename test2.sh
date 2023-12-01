@@ -13,6 +13,8 @@ module load parallel
 
 #job commands go below this line
 parallel echo ::: A B C ::: 1 2 3 &
-parallel echo : hostname : hostname &
-parallel echo : hostname
+parallel echo ::: hostname ::: 
+  hostname &
+parallel echo 
+  hostname
 wait
