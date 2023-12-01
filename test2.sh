@@ -17,4 +17,7 @@ parallel echo ::: 77 'Tea' :::
   hostname &
 parallel echo :::
   hostname
-srun --no-kill --wait=0 $*
+srun --no-kill --wait=0 $*     #ensures job doesn't end if nodes unavailable first try
+
+#doesnt run with srun parallel echo... i think thats wring syntax
+#is not running on separate nodes. I'm not sure why. hostname always outputs one node
