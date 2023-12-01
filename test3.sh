@@ -12,4 +12,4 @@
 module load parallel 
 
 #job commands go below this line
-srun -N1 -n1 ./test3script.sh
+orterun -N1 -n1 ./test3script.sh
