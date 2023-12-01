@@ -12,10 +12,10 @@
 module load parallel
 
 #job commands go below this line
-srun --ntasks-per-node=1 --exclusive parallel echo ::: A B C ::: 1 2 3 &
-srun --ntasks-per-node=1 --exclusive parallel echo ::: "coffee" "or" "tea?" ::: 
+srun --ntasks-per-node=1 --exclusive parallel -nonall -tag echo ::: A B C ::: 1 2 3 &
+srun --ntasks-per-node=1 --exclusive parallel -nonall -tag echo ::: "coffee" "or" "tea?" ::: 
   hostname &
-parallel echo 
+parallel -nonall -tag
   hostname
   
 wait
