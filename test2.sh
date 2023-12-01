@@ -13,12 +13,9 @@ module load parallel
 
 #job commands go below this line
 srun --ntasks-per-node=1 --exclusive parallel echo ::: A B C ::: 1 2 3 &
-srun --ntasks-per-node=1 --exclusive parallel echo ::: 
-  hostname ::: 
+srun --ntasks-per-node=1 --exclusive parallel echo ::: "coffee" "or" "tea?" ::: 
   hostname &
-parallel echo :::
-  hostname :::
+parallel echo 
   hostname
   
-srun --no-kill --wait=0 $*     #ensures job doesn't end if nodes unavailable first try
-
+wait
