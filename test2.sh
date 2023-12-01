@@ -12,8 +12,8 @@
 module load parallel
 
 #job commands go below this line
-parallel echo ::: A B C ::: 1 2 3 &
-parallel echo ::: 77 'Tea' ::: 
+srun parallel echo ::: A B C ::: 1 2 3 &
+srun parallel echo ::: 77 'Tea' ::: 
   hostname &
-parallel echo :::
+srun parallel echo :::
   hostname
