@@ -12,4 +12,4 @@
 module load parallel 
 
 #job commands go below this line
-srun --ntasks=1 --exclusive ./test3.py
+srun -N1 -n1 ./test3.py
