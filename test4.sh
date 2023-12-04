@@ -11,4 +11,4 @@
 
 
 #job commands go below this line 
-srun -N3 -n3 test4.py #test 4 is a mpi script
+srun -N3 -n3 test4 #test 4 is a mpi script
