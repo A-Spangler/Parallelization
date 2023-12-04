@@ -9,7 +9,6 @@
 #SBATCH --time 0:01:00
 #SBATCH --mail-user=aas6791@psu.edu
 
-module load openmpi
 module load python
 
 #job commands go below this line
