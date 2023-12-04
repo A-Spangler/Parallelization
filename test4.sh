@@ -10,4 +10,4 @@
 #SBATCH --mail-user=aas6791@psu.edu
 
 #job commands go below this line 
-srun -N3 -n3 test4script.sh
+srun -N3 -n3 test4.py #test 4 is a mpi script
