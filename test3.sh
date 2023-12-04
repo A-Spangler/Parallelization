@@ -12,4 +12,4 @@
 module load python
 
 #job commands go below this line
-./test3.py #test 3 is a serial script
+./test3 #test 3 is a script that uses 'parallel'
