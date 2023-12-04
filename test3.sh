@@ -12,4 +12,4 @@
 module load python
 
 #job commands go below this line
-./test3.py
+srun -N1 -n1 ./test3.py
