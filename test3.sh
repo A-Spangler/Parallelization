@@ -12,4 +12,4 @@
 module load python
 
 #job commands go below this line
-python test3.py
+sbatch test3.py
