@@ -12,7 +12,7 @@
 module load intel
 module load openmpi
 
-srun -N3 -n10 ./hello_world_mpi.exe
+./hello_world_mpi.exe
 
 
 
