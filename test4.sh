@@ -11,4 +11,4 @@
 
 
 #job commands go below this line 
-./test4 #test 4 is a parallel script using 'parallel'
+srun -N2 -ntasks-per-node=1 ./test4 #test 4 is a parallel script using 'parallel'
