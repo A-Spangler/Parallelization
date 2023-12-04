@@ -12,4 +12,4 @@
 module load python
 
 #job commands go below this line
-./test3.py
+python test3.py
