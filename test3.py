@@ -9,4 +9,4 @@
 #SBATCH --time 0:01:00
 #SBATCH --mail-user=aas6791@psu.ed
 
-print('kitties')
+echo "kitties"
