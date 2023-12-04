@@ -1,2 +1,2 @@
-hostname
-echo "rain"
+echo 'rain'
+  hostname
