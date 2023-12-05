@@ -12,7 +12,7 @@
 module load parallel
 
 #job commands go below this line
-srun echo 'kitties'
+srun -N1 -n1 echo 'kitties'
 echo 'coffee'
-srun parallel echo ::: A B C ::: 7 77 777
+srun -N1 -n1 parallel echo ::: A B C ::: 7 77 777
 
