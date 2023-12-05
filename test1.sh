@@ -10,5 +10,7 @@
 #SBATCH --mail-user=aas6791@psu.edu
 
 #job commands go below this line
-parallel echo ::: A B C ::: 7 77 777
-hostname
+srun echo 'kitties'
+echo 'coffee'
+srun parallel echo ::: A B C ::: 7 77 777
+
