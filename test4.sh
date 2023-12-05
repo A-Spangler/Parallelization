@@ -9,6 +9,7 @@
 #SBATCH --time 0:01:00
 #SBATCH --mail-user=aas6791@psu.edu
 
+module load parallel 
 
 #job commands go below this line 
 srun -N2 -ntasks-per-node=1 ./test4 #test 4 is a parallel script using 'parallel'
