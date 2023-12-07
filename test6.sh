@@ -14,7 +14,7 @@
 #SBATCH --mem=0
 
 module load anaconda3/2021.05
-source activate /Users/aas6791/anaconda3/envs/Myenv
+source activate Myenv
 module load parallel
 
 srun="srun -n 1 -c $SLURM_CPUS_ON_NODE "
