@@ -18,5 +18,5 @@ source activate /Users/aas6791/anaconda3/envs/Myenv
 module load parallel
 
 srun="srun -n 1 -c $SLURM_CPUS_ON_NODE "
-parallel="parallel --max-procs $SLURM_CPUS_ON_NODE --delay 0.2 
+parallel="parallel --max-procs $SLURM_CPUS_ON_NODE --delay 0.2" 
 $srun $parallel "python3 parallel.py" ::: {0..10}
