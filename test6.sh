@@ -9,7 +9,6 @@
 #SBATCH --cpus-per-task=48
 #SBATCH --time=4:00:00
 #SBATCH --mail-user=aas6791@psu.edu
-#SBATCH --mail-type=ALL
 #SBATCH --export=ALL
 #SBATCH --exclusive=mcs
 #SBATCH --mem=0
