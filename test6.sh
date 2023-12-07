@@ -13,7 +13,7 @@
 #SBATCH --exclusive=mcs
 #SBATCH --mem=0
 
-module load anaconda3/2021.05
+module load anaconda3/2023.03
 source activate /Users/aas6791/anaconda3/envs/Myenv
 module load parallel
 
