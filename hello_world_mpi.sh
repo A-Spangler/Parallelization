@@ -12,7 +12,7 @@
 module load intel
 module load openmpi
 
-./hello_world_mpi.exe
+srun --nodes=3 -ntasks=10 "sh ./hello_world_mpi.exe"
 
 
 
