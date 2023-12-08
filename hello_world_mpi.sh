@@ -6,7 +6,7 @@
 #SBATCH --nodes=3
 #SBATCH --ntasks=10
 #SBATCH --partition=sla-prio
-#SBATCH --time 0:01:00
+#SBATCH --time 0:10:00
 #SBATCH --mail-user=aas6791@psu.edu
 
 module load intel
