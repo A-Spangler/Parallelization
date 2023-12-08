@@ -12,4 +12,5 @@
 module load parallel 
 
 #job commands go below this line 
-srun -N2 --ntasks-per-node=1 ./runtest4 #test 4 is a parallel script using 'parallel'
+srun -N2 --ntasks-per-node=1 parallel "sh ./runtest4" ::: {0..2}
+#test 4 is a serial script
