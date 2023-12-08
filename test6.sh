@@ -13,7 +13,7 @@
 #SBATCH --exclusive=mcs
 #SBATCH --mem=0
 
-module load anaconda3/2023
+module load anaconda
 python /storage/home/aas6791/Lake_Problem_DPS/parallel.py
 module load parallel
 
