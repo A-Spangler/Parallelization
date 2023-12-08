@@ -16,4 +16,4 @@
 module load parallel
 
 #job commands below this line
-srun ./runtest5.sh
+srun "sh ./runtest5.sh"
