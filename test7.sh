@@ -18,3 +18,4 @@ module load parallel
 srun="srun -n 1 -c $SLURM_CPUS_ON_NODE "
 parallel="parallel --max-procs $SLURM_CPUS_ON_NODE" 
 $srun $parallel "sleep" ::: 1 2 4
+hostname
