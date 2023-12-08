@@ -1,3 +1,1 @@
-#!/bin/bash
-parallel echo ::: A B C ::: 1 2 3
-  hostname
+hostname
