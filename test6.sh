@@ -14,6 +14,7 @@
 #SBATCH --mem=0
 
 module load anaconda3/2023
+python /storage/home/aas6791/Lake_Problem_DPS/parallel.py
 module load parallel
 
 srun="srun -n 1 -c $SLURM_CPUS_ON_NODE "
