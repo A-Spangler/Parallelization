@@ -12,9 +12,11 @@
 
 module load openmpi boost/1.77.0
 
-# Your commands go here
-# arguments are <seed> <NFE>
+# Request resources once before the loop
+srun -N3 -n20 echo "Resource allocation for LakeDPSparallel"
+
+# Run LakeDPSparallel inside the loop
 for i in {1..50}
 do
-  srun -N3 -n20 ./LakeDPSparallel $i 200000
+  ./LakeDPSparallel $i 200000
 done
