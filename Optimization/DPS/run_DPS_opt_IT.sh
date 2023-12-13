@@ -19,5 +19,5 @@ module load boost/1.77.0
 # arguments are <seed> <NFE>
 for i in {1..50}
 do
-  srun -N3 -n20 "sh ./LakeDPSparallel" $i 200000
+  srun -N3 -n20 ./LakeDPSparallel $i 200000
 done
