@@ -22,3 +22,7 @@ for i in {1..50}
 do
   srun -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel $i 200000
 done
+
+
+#doesnt seem like --exclusive or changing -n20 to --ntasks-per-node=20 changed much. (maybe it did change something, but
+#calling ALL these resources in a 20000 times loop was the first error reported and then it aborted before addressing other flags)
