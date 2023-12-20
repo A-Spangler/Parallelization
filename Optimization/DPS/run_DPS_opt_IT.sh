@@ -18,10 +18,8 @@ module load boost/1.77.0
 
 # Your commands go here
 # arguments are <seed> <NFE>
-for i in {1..50}
-do
-  srun -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel $i 200000
-done
+srun -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel 1 20000
+
 
 
 #doesnt seem like --exclusive or changing -n20 to --ntasks-per-node=20 changed much. (maybe it did change something, but
