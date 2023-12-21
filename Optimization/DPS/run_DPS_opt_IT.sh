@@ -18,7 +18,7 @@ module load boost/1.77.0
 
 # Your commands go here
 # arguments are <seed> <NFE>
-mpirun ./LakeDPSparallel 1 100
+orterun ./LakeDPSparallel 1 100
 
 #srun --mpi=openmpi -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel 1 100
 
