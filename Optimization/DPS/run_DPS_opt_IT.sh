@@ -20,5 +20,6 @@ module load boost/1.77.0
 # arguments are <seed> <NFE>
 srun -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel 1 100
 
+#--nodes=3 --exclusive --ntasks-per-node=20 --mem-per-cpu=10gb --partition=sla-prio --account=azh5924_b --time=1:00:00
 #doesnt seem like --exclusive or changing -n20 to --ntasks-per-node=20 changed much. (maybe it did change something, but
 #calling ALL these resources in a 20000 times loop was the first error reported and then it aborted before addressing other flags)
