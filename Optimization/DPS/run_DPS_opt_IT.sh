@@ -18,7 +18,9 @@ module load boost/1.77.0
 
 # Your commands go here
 # arguments are <seed> <NFE>
-srun --mpi=openmpi -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel 1 100
+mpirun ./LakeDPSparallel 1 100
+
+#srun --mpi=openmpi -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel 1 100
 
 #doesnt seem like --exclusive or changing -n20 to --ntasks-per-node=20 changed much. (maybe it did change something, but
 #calling ALL these resources in a 20000 times loop was the first error reported and then it aborted before addressing other flags)
