@@ -8,7 +8,7 @@
 #SBATCH --mem-per-cpu=10gb       											 					# Memory per cpu. specified if changing from preset
 #SBATCH --partition=sla-prio           													# Queue name "parallel"
 #SBATCH --account=azh5924_b  																    # Allocation name
-#SBATCH --time=1:00:00       											 					    # Run time (hh:mm:ss) - up to 36 hours
+#SBATCH --time=00:50:00       											 					    # Run time (hh:mm:ss) - up to 36 hours
 #SBATCH --mail-user=aas6791@psu.edu             								# Address for email notification
 #SBATCH --mail-type=ALL                  												# Email at Begin and End of job
 
