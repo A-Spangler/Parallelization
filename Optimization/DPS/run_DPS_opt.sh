@@ -12,10 +12,8 @@
 #SBATCH --mail-type=ALL                  												# email at Begin and End of job
 
 module load gcc
-module load openmpi
+module load openmpi/4.1.1
 module load boost/1.77.0
-
-module load openmpi boost/1.77.0
 
 # Request resources once before the loop
 srun -N3 -n20 echo "Resource allocation for LakeDPSparallel"
