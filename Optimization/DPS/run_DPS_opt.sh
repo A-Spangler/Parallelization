@@ -16,7 +16,7 @@ module load openmpi/4.1.1
 module load boost/1.77.0
 
 # Request resources once before the loop
-srun -N3 --exclusive --ntasks-per-node=20 echo "Resource allocation for LakeDPSparallel"
+srun -N3 --exclusive --ntasks-per-node=20 echo 'Resource allocation for LakeDPSparallel'
 
 # Run LakeDPSparallel inside the loop
 for i in {1..50}
@@ -24,6 +24,7 @@ do
   ./LakeDPSparallel 1 100
 done
 
+#notes
 #request resources outside of loop 
 #try just one run 
 #./LakeDPSparallel $i 200000
