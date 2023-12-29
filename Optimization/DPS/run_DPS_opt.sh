@@ -23,5 +23,9 @@ srun -N3 -n20 echo "Resource allocation for LakeDPSparallel"
 # Run LakeDPSparallel inside the loop
 for i in {1..50}
 do
-  ./LakeDPSparallel $i 200000
+  ./LakeDPSparallel 1 100
 done
+
+#request resources outside of loop 
+#try just one run 
+#./LakeDPSparallel $i 200000
