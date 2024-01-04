@@ -23,7 +23,7 @@ srun ./LakeDPSparallel 1 100
 
 #for i in {1..50}
 #do
-#  srun ./LakeDPSparallel 1 100
+#  srun ./LakeDPSparallel $i 200000
 #done
 
 #--nodes=3 --exclusive --ntasks-per-node=20 --mem-per-cpu=10gb --partition=sla-prio --account=azh5924_b --time=1:00:00
