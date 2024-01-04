@@ -5,6 +5,7 @@
 #SBATCH --nodes=3       											 					        # Number of nodes to use
 #SBATCH --exclusive       											 					      # Exclusive use of those nodes
 #SBATCH --ntasks-per-node=20       											 				# Number of tasks each node can perform
+#SBATCH --ntasks=60       											 					      # 3*20=60
 #SBATCH --mem-per-cpu=10gb       											 					# Memory per cpu. specified if changing from preset
 #SBATCH --partition=sla-prio           													# Queue name "parallel"
 #SBATCH --account=azh5924_b  																    # Allocation name
@@ -20,7 +21,7 @@ module load boost/1.77.0
 # arguments are <seed> <NFE>
 for i in {1..50}
 do
-  srun -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel 1 100
+  srun ./LakeDPSparallel 1 100
 done
 
 #--nodes=3 --exclusive --ntasks-per-node=20 --mem-per-cpu=10gb --partition=sla-prio --account=azh5924_b --time=1:00:00
