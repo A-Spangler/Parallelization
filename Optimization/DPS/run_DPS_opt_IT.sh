@@ -13,18 +13,15 @@
 #SBATCH --mail-user=aas6791@psu.edu             								# Address for email notification
 #SBATCH --mail-type=ALL                  												# Email at Begin and End of job
 
-module load gcc
 module load openmpi/4.1.4
-module load boost/1.77.0
+module load boost
 
 # Your commands go here
 # arguments are <seed> <NFE>
-srun ./LakeDPSparallel 1 100
-
-#for i in {1..50}
-#do
-#  srun ./LakeDPSparallel $i 200000
-#done
+for i in {1..50}
+do
+  srun ./LakeDPSparallel $i 200000
+done
 
 #--nodes=3 --exclusive --ntasks-per-node=20 --mem-per-cpu=10gb --partition=sla-prio --account=azh5924_b --time=1:00:00
 #doesnt seem like --exclusive or changing -n20 to --ntasks-per-node=20 changed much. (maybe it did change something, but
