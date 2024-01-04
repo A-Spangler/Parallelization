@@ -19,10 +19,12 @@ module load boost/1.77.0
 
 # Your commands go here
 # arguments are <seed> <NFE>
-for i in {1..50}
-do
-  srun ./LakeDPSparallel 1 100
-done
+srun ./LakeDPSparallel 1 100
+
+#for i in {1..50}
+#do
+#  srun ./LakeDPSparallel 1 100
+#done
 
 #--nodes=3 --exclusive --ntasks-per-node=20 --mem-per-cpu=10gb --partition=sla-prio --account=azh5924_b --time=1:00:00
 #doesnt seem like --exclusive or changing -n20 to --ntasks-per-node=20 changed much. (maybe it did change something, but
