@@ -14,7 +14,7 @@
 #SBATCH --mail-type=ALL                  												# Email at Begin and End of job
 
 module load gcc
-module load openmpi/4.1.1
+module load openmpi/4.1.4
 module load boost/1.77.0
 
 # Your commands go here
