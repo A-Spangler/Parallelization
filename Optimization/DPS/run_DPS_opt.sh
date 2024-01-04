@@ -12,7 +12,6 @@
 #SBATCH --mail-user=aas6791@psu.edu             				 						# address for email notification
 #SBATCH --mail-type=ALL                  									    			# email at Begin and End of job
 
-module load gcc
 module load openmpi/4.1.4
 module load boost/1.77.0
 
