@@ -5,6 +5,7 @@
 #SBATCH --nodes=3
 #SBATCH --ntasks-per-node=20
 #SBATCH --ntasks=60
+#SBATCH --exclusive
 #SBATCH --mem-per-cpu=10gb
 #SBATCH --partition=sla-prio           															# Queue name "parallel"
 #SBATCH --account=azh5924_b  														        		# allocation name
@@ -15,17 +16,10 @@
 module load openmpi/4.1.4
 module load boost/1.77.0
 
-# Request resources once before the loop
-srun -N3 --exclusive --ntasks-per-node=20 echo 'Resource allocation for LakeDPSparallel'
-
-# Run LakeDPSparallel inside the loop
+# Run LakeDPSparallel inside loop
 for i in {1..50}
 do
   srun ./LakeDPSparallel 1 100
 done
 
-#notes
-#for i in {1..50}
-#do
-#  srun -N3 --exclusive --ntasks-per-node=20 ./LakeDPSparallel $i 200000
-#done
+
