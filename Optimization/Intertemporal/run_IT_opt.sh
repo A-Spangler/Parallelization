@@ -6,11 +6,12 @@
 #SBATCH --ntasks-per-node=20           													# Number of processors per node (up to 20)
 #SBATCH -partition=sla-prio           															# Queue name "parallel"
 #SBATCH --account=azh5924_b 																# allocation name
-#SBATCH -time=01:00:00       											 					# Run time (hh:mm:ss) - up to 36 hours
+#SBATCH --time=01:00:00       											 					# Run time (hh:mm:ss) - up to 36 hours
 #SBATCH --mail-user=aas6791@psu.edu             										# address for email notification
 #SBATCH --mail-type=ALL                  												# email at Begin and End of job
 
-module load openmpi boost/1.77.0
+module load openmpi/4.1.4
+module load boost/1.77.0
 
 # Your commands go here
 # arguments are <seed> <NFE>
