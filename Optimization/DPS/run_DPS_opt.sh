@@ -19,7 +19,7 @@ module load boost/1.77.0
 # Run LakeDPSparallel inside loop
 for i in {1..50}
 do
-  srun ./LakeDPSparallel 1 100
+  srun -n3 --ntasks-per-node=20 --ntasks=60 --exclusive ./LakeDPSparallel 1 100
 done
 
 
