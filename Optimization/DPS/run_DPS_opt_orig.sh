@@ -23,4 +23,5 @@ do
   srun ./LakeDPSparallel $i 200000
 done
 
-#-n3 --ntasks-per-node=20 --ntasks=60 --exclusive
+
+#sbatch --partition=sla-prio --account=azh5924_b
