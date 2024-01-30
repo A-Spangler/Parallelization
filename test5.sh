@@ -17,3 +17,4 @@ module load parallel
 
 #job commands below this line
 srun --nodes=2 --ntasks-per-node=1 "sh ./runtest5.sh"
+#runtest5.sh is a parallel script
